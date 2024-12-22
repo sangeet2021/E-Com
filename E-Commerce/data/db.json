@@ -1,0 +1,44 @@
+{
+  "shoes": [
+    {
+      "id": 1,
+      "name": "Nike Air Max 270",
+      "price": 160.0,
+      "description": "A lightweight sneaker with excellent cushioning.",
+      "sizes": [6, 7, 8, 9, 10, 11, 12],
+      "image_url": "https://imgs.search.brave.com/b-ym-iKM1UD1pBdHzME1nNs95C6iA_OiHJRXGA23wtU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMubmlrZS5jb20v/YS9pbWFnZXMvdF9Q/RFBfMTcyOF92MS9m/X2F1dG8scV9hdXRv/OmVjby9hd2pvZ3Rk/bnF4bmlxcWswd3Bn/Zi9BSVIrTUFYKzI3/MC5wbmc"
+    },
+    {
+      "id": 2,
+      "name": "Adidas Ultraboost 22",
+      "price": 180.0,
+      "description": "A high-performance running shoe with responsive cushioning.",
+      "sizes": [5, 6, 7, 8, 9, 10, 11],
+      "image_url": "https://imgs.search.brave.com/Q-fVf3EzxsgdIKsyZ74atY_opIklPq1vtSWTlzTl6rI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9hc3Nl/dHMuYWRpZGFzLmNv/bS9pbWFnZXMvd182/MDAsZl9hdXRvLHFf/YXV0by9mYmFmOTkx/YTc4YmM0ODk2YTNl/OWFkNzgwMGFiY2Vj/Nl85MzY2L1VsdHJh/Ym9vc3RfMjJfU2hv/ZXNfQmxhY2tfR1ow/MTI3XzAxX3N0YW5k/YXJkLmpwZw"
+    },
+    {
+      "id": 3,
+      "name": "Puma RS-X",
+      "price": 110.0,
+      "description": "Retro-inspired design with bold colors and style.",
+      "sizes": [6, 7, 8, 9, 10, 11, 12, 13],
+      "image_url": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_1000,h_1000/global/373108/01/sv01/fnd/IND/fmt/png"
+    },
+    {
+      "id": 4,
+      "name": "Reebok Nano X3",
+      "price": 140.0,
+      "description": "Durable and versatile, perfect for gym workouts.",
+      "sizes": [7, 8, 9, 10, 11, 12],
+      "image_url": "https://imgs.search.brave.com/y-5jN6Ff9EH_OMMkCMUcC_CHJdeaTsFC9yiPrC4uUhY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTE0a1VOOUttREwu/anBn"
+    },
+    {
+      "id": 5,
+      "name": "New Balance 574",
+      "price": 85.0,
+      "description": "A classic sneaker with a timeless silhouette.",
+      "sizes": [6, 7, 8, 9, 10, 11, 12, 13],
+      "image_url": "https://nb.scene7.com/is/image/NB/ml574evn_nb_02_i?$pdpflexf2$&wid=880&hei=880"
+    }
+  ]
+}

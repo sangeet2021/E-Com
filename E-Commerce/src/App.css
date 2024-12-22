@@ -1,42 +1,195 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+.nav {
+  width: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  position: absolute;
+  z-index: 2;
+  color: white;
+  position: fixed;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.nav h1 {
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: 600;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav span {
+  color: orange;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.nav-ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  align-items: center;
+}
+
+.nav-ul li {
+  transition: all linear 0.1s;
+  font-size: 16px;
+}
+
+.nav-ul li:hover {
+  color: orange;
+  cursor: pointer;
+  transition: all linear 0.1s;
+  font-size: 20px;
+}
+
+.main-button {
+  width: 4rem;
+  height: 2rem;
+  
+  border: solid 1px orange;
+  cursor: pointer;
+  transition: all linear 0.2s;
+  background-color: transparent;
+  color: white;
+}
+
+.main-button:hover {
+  background-color: orange;
+  color: white;
+  transition: all linear 0.2s;
+}
+
+.home {
+  background-image: url("./assets/gbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+  min-height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+.description h1 {
+  font-family: "PT Sans", serif;
+  font-weight: 1000;
+}
+
+.overlay button {
+  width: 10rem;
+  height: 2rem;
+  font-size: larger;
+  position: absolute;
+  bottom: 15rem;
+  border: none;
+  /* border-radius: 5px; */
+  cursor: pointer;
+  transition: all linear 0.2s;
+  
+  /* animation: bounce 1s infinite; */
+}
+
+.overlay button:hover {
+  color: white;
+  background-color: orange;
+  transition: all linear 0.1s;
+}
+
+/* @keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  40% {
+    transform: translateY(-15px);
   }
+  
+} */
+
+.shop-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #10375c;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.sub-shop {
+  color: white;
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: center;
 }
 
-.card {
-  padding: 2em;
+.shop-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.read-the-docs {
-  color: #888;
+.shop-list li {
+  border: 1px solid white;
+  min-height: 350px;
+  min-width: 250px;
+  position: relative;
+  transition: all linear 0.1s;
 }
+
+.shop-list li:hover{
+  border: orange 1px solid;
+  transition: all linear 0.1s;
+  cursor: pointer;
+}
+
+
+.shop-list li img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  transition: all linear 0.1s;
+}
+
+.shop-list li img:hover{
+  transform: scale(1.1);
+  transition: all linear 0.1s;
+}
+
+.shop-list li button{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2rem;
+  cursor: pointer;
+  border: none;
+  transition: all linear 0.1s;
+}
+
+.shop-list li button:hover{
+  background-color: orange;
+  transition: all linear 0.1s;
+  color: white;
+}
+
+.shop-list li p{
+  padding: 4px 0 4px 4px;
+}
+
+
