@@ -4,6 +4,7 @@ import Home from "./Components/Home";
 import Shop from "./Components/Shop";
 import { CartContextProovider } from "./Context/CartContext";
 import { useRef } from "react";
+import About from "./Components/About";
 
 function App() {
   const shopRef = useRef(null);
@@ -21,6 +22,7 @@ function App() {
       <Nav onShop={scrollToShop} onHome={scrollToHome} />
       <Home onShop={scrollToShop} ref={homeRef} />
       <Shop ref={shopRef} />
+      <About/>
     </CartContextProovider>
   );
 }

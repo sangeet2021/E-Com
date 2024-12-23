@@ -192,4 +192,17 @@
   padding: 4px 0 4px 4px;
 }
 
+.about {
+  background-color: #105C4A;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.about h1{
+  margin-top: 8rem;
+  
+}
+
 
