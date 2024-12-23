@@ -2,7 +2,7 @@ import Button from "./UI/Button";
 import CartContext from "../Context/CartContext";
 import { useContext } from "react";
 
-const Nav = ({ onShop, onHome }) => {
+const Nav = ({ onShop, onHome, onAbout }) => {
   const btnData = useContext(CartContext);
   const totalQuantity = btnData.items.reduce(
     (total, item) => total + item.quantity,
@@ -16,7 +16,7 @@ const Nav = ({ onShop, onHome }) => {
 
       <ul className="nav-ul">
         <li onClick={onShop}>Products</li>
-        <li>About Us</li>
+        <li onClick={onAbout}>About Us</li>
         <li>Contact</li>
         <li>
           <Button>Cart ({totalQuantity})</Button>

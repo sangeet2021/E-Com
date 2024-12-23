@@ -46,7 +46,7 @@
 .main-button {
   width: 4rem;
   height: 2rem;
-  
+
   border: solid 1px orange;
   cursor: pointer;
   transition: all linear 0.2s;
@@ -99,7 +99,7 @@
   /* border-radius: 5px; */
   cursor: pointer;
   transition: all linear 0.2s;
-  
+
   /* animation: bounce 1s infinite; */
 }
 
@@ -153,12 +153,11 @@
   transition: all linear 0.1s;
 }
 
-.shop-list li:hover{
+.shop-list li:hover {
   border: orange 1px solid;
   transition: all linear 0.1s;
   cursor: pointer;
 }
-
 
 .shop-list li img {
   width: 100%;
@@ -167,12 +166,12 @@
   transition: all linear 0.1s;
 }
 
-.shop-list li img:hover{
+.shop-list li img:hover {
   transform: scale(1.1);
   transition: all linear 0.1s;
 }
 
-.shop-list li button{
+.shop-list li button {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -182,27 +181,100 @@
   transition: all linear 0.1s;
 }
 
-.shop-list li button:hover{
+.shop-list li button:hover {
   background-color: orange;
   transition: all linear 0.1s;
   color: white;
 }
 
-.shop-list li p{
+.shop-list li p {
   padding: 4px 0 4px 4px;
 }
 
 .about {
-  background-color: #105C4A;
+  background-color: #105c4a;
   color: white;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 7rem;
 }
 
-.about h1{
-  margin-top: 8rem;
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  /* margin-top: 7rem; */
+}
+
+.head p {
+  font-size: 20px;
+  font-style: italic;
+}
+
+#span-1 {
+  font-weight: bold;
+  color: orange;
+}
+
+#span-2 {
+  font-weight: bold;
+  color: white;
+}
+
+.obj {
+  margin-top: 5rem;
+  display: flex;
+  width: 80%;
+  align-items: center;
+  gap: 2rem;
+  /* background-color: red; */
+  justify-content: center;
   
 }
 
+.sub-obj {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  text-align: center;
+  padding: 8px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Blurs the content behind */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Adds a subtle border */
+  /* border-radius: 15px;  */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+  padding: 20px; /* Adds some spacing inside the element */
+  cursor: pointer;
+  transition: all linear 0.1s;
+}
 
+.sub-obj:hover{
+  transform: scale(1.1);
+  transition: all linear 0.1s;
+  border: rgba(255, 165, 0, 1) 1px solid;
+}
+
+
+.sub-obj h3{
+  font-weight: bolder;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem;
+  gap: 1rem;
+}
+
+.footer p{
+  font-size: 20px;
+  font-style: italic;
+}
