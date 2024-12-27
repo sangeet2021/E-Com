@@ -233,7 +233,6 @@
   gap: 2rem;
   /* background-color: red; */
   justify-content: center;
-  
 }
 
 .sub-obj {
@@ -253,20 +252,19 @@
   transition: all linear 0.1s;
 }
 
-.sub-obj:hover{
+.sub-obj:hover {
   transform: scale(1.1);
   transition: all linear 0.1s;
   border: rgba(255, 165, 0, 1) 1px solid;
 }
 
-
-.sub-obj h3{
+.sub-obj h3 {
   font-weight: bolder;
   margin-bottom: 8px;
   font-size: 24px;
 }
 
-.footer{
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -274,7 +272,104 @@
   gap: 1rem;
 }
 
-.footer p{
+.footer p {
   font-size: 20px;
   font-style: italic;
+}
+
+.modal {
+  /* Reset margin to prevent unwanted spacing */
+  /* margin: 0; 
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  width: 400px;
+  height: 250px; */
+
+  /* Center the modal on the screen */
+  /* position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+
+  /* Overlay styles */
+  /* background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000; */
+}
+
+.modal {
+  /* margin: auto;
+  position: fixed;
+  height: 250px;
+  width: 400px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  position: relative; */
+  margin: auto;
+  background-color: #e4ddd4;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  width: 80%;
+  max-width: 40rem;
+  text-align: center;
+  /* display: flex;
+  justify-content: center; */
+}
+
+.modal::backdrop {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+.modal button {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: grey;
+}
+
+.modal ul{
+  margin-top: 1rem;
+}
+
+.cart-items {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  margin-top: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  
+}
+
+.heading p {
+  width: 33.3%;
+  padding: 0;
+  font-weight: bold;
+}
+
+.cart-items p {
+  width: 33.3%;
+  padding: 0;
 }

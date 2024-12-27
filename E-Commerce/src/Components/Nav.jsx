@@ -1,13 +1,20 @@
 import Button from "./UI/Button";
 import CartContext from "../Context/CartContext";
 import { useContext } from "react";
+import OpenCloseContext from "../Context/OpenCloseContext";
 
 const Nav = ({ onShop, onHome, onAbout }) => {
   const btnData = useContext(CartContext);
+  const userCtx = useContext(OpenCloseContext);
   const totalQuantity = btnData.items.reduce(
     (total, item) => total + item.quantity,
     0
   );
+  const openCart = () => {
+    userCtx.showCart();
+    // console.log("logged")
+    console.log(userCtx.progress)
+  };
   return (
     <nav className="nav">
       <h1 onClick={onHome}>
@@ -19,7 +26,7 @@ const Nav = ({ onShop, onHome, onAbout }) => {
         <li onClick={onAbout}>About Us</li>
         <li>Contact</li>
         <li>
-          <Button>Cart ({totalQuantity})</Button>
+          <Button onClick={openCart}>Cart ({totalQuantity})</Button>
         </li>
       </ul>
     </nav>
