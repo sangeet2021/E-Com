@@ -326,7 +326,7 @@
   background-color: rgba(0, 0, 0, 0.55);
 }
 
-.modal button {
+.modal .btt {
   width: 16px;
   height: 16px;
   display: flex;
@@ -342,7 +342,7 @@
   color: grey;
 }
 
-.modal ul{
+.modal ul {
   margin-top: 1rem;
 }
 
@@ -360,7 +360,6 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
-  
 }
 
 .heading p {
@@ -373,3 +372,16 @@
   width: 33.3%;
   padding: 0;
 }
+
+.quant {
+  display: flex;
+  justify-content: center;
+}
+
+.quant button{
+  padding: 0px 4px;
+  cursor: pointer;
+  
+}
+
+
