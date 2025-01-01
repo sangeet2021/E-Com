@@ -318,12 +318,42 @@
   width: 80%;
   max-width: 40rem;
   text-align: center;
+  animation: fade-slide-up 0.3s ease-out forwards;
+  
+  
+
   /* display: flex;
   justify-content: center; */
 }
 
+
+
 .modal::backdrop {
   background-color: rgba(0, 0, 0, 0.55);
+}
+
+@keyframes fade-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-slide-down {
+  to {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .modal .btt {
@@ -344,6 +374,14 @@
 
 .modal ul {
   margin-top: 1rem;
+}
+
+.modal h3{
+  width: 100%;
+  margin-top: 1rem;
+  text-align: right;
+  font-weight: bold;
+  padding-right: 2.2rem;
 }
 
 .cart-items {
@@ -378,10 +416,31 @@
   justify-content: center;
 }
 
-.quant button{
+.quant button {
   padding: 0px 4px;
   cursor: pointer;
-  
 }
 
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
 
+.modal-content img{
+  height: 300px;
+}
+
+.modal-close {
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.modal-close:hover {
+  background: darkred;
+}
