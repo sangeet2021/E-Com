@@ -17,8 +17,8 @@ const Modal = ({ children, open, onClose }) => {
     <dialog ref={dialog} onClose={onClose} className="modal">
       <div className="modal-content">
         {children}
-        <button className="modal-close" onClick={onClose}>
-          Close
+        <button className="btt" onClick={onClose}>
+          X
         </button>
       </div>
     </dialog>,

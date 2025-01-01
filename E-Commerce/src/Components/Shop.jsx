@@ -29,17 +29,25 @@ const Shop = forwardRef((props, ref) => {
 
         <ul className="shop-list">
           {data.map((item) => (
-            <ShopList key={item.id || item.name} data={item} onItemClick={handleItemClick} />
+            <ShopList
+              key={item.id || item.name}
+              data={item}
+              onItemClick={() => handleItemClick(item)}
+            />
           ))}
         </ul>
       </div>
       {selectedItem && (
         <Modal open={isModalOpen} onClose={handleCloseModal}>
-          <h2>{selectedItem.name}</h2>
-          <img src={selectedItem.image_url} alt={selectedItem.name} />
-          <p>{selectedItem.description}</p>
-          <p>Price: {currencyFormatter.format(selectedItem.price)}</p>
-          <p>Sizes: {selectedItem.sizes.join(", ")}</p>
+          <div className="selected-item">
+            <img src={selectedItem.image_url} alt={selectedItem.name} />
+            <div className="subselect">
+              <h2>{selectedItem.name}</h2>
+              <p>{selectedItem.description}</p>
+              <p>Price: {currencyFormatter.format(selectedItem.price)}</p>
+              <p>Sizes: {selectedItem.sizes.join(", ")}</p>
+            </div>
+          </div>
         </Modal>
       )}
     </div>

@@ -310,23 +310,28 @@
   border-radius: 10px;
   position: relative; */
   margin: auto;
-  background-color: #e4ddd4;
+  background-color: white;
   border-radius: 6px;
   border: none;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-  padding: 1rem;
+  padding: 2rem;
   width: 80%;
-  max-width: 40rem;
+  max-width: 45rem;
   text-align: center;
   animation: fade-slide-up 0.3s ease-out forwards;
-  
-  
-
-  /* display: flex;
-  justify-content: center; */
 }
 
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  /* align-items: center; */
+  width: 100%;
+}
 
+.modal-content img {
+  height: 300px;
+}
 
 .modal::backdrop {
   background-color: rgba(0, 0, 0, 0.55);
@@ -344,18 +349,6 @@
   }
 }
 
-@keyframes fade-slide-down {
-  to {
-    opacity: 0;
-    transform: translateY(4rem);
-  }
-
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 .modal .btt {
   width: 16px;
   height: 16px;
@@ -366,17 +359,18 @@
   top: 1rem;
   right: 1rem;
   cursor: pointer;
-  background: none;
   border: none;
+  outline: none;
   font-size: 1rem;
   color: grey;
+  background: transparent;
 }
 
 .modal ul {
   margin-top: 1rem;
 }
 
-.modal h3{
+.modal h3 {
   width: 100%;
   margin-top: 1rem;
   text-align: right;
@@ -419,28 +413,28 @@
 .quant button {
   padding: 0px 4px;
   cursor: pointer;
+  background: transparent;
+  border: lightgray 1px solid;
+  transition: all linear 0.1s;
 }
 
-.modal-content {
+.quant button:hover {
+  border: gray 1px solid;
+  transition: all linear 0.1s;
+}
+
+.selected-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.subselect {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  align-items: center;
+  gap: 1rem;
+  text-align: left;
 }
 
-.modal-content img{
-  height: 300px;
-}
-
-.modal-close {
-  background: red;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.modal-close:hover {
-  background: darkred;
+.subselect p {
+  font-weight: bold;
 }

@@ -9,15 +9,22 @@ const ShopList = ({ data, onItemClick }) => {
     mealItem.addItem(data);
   };
 
-  const handleItemClick = () => {
-    onItemClick(data)
-  }
+  // const handleItemClick = () => {
+  //   onItemClick(data);
+  // };
   return (
-    <li onClick={handleItemClick}>
+    <li onClick={onItemClick}>
       <img src={data.image_url} alt="" />
       <p>{data.name}</p>
       <p>{currencyFormatter.format(data.price)}</p>
-      <button onClick={(e) => { e.stopPropagation(); handleAddItem(); }}>Add To Cart</button>
+      <button
+        onClick={(e) => {
+          e.stopPropagation();
+          handleAddItem();
+        }}
+      >
+        Add To Cart
+      </button>
     </li>
   );
 };
