@@ -54,7 +54,7 @@ export function CartContextProovider({ children }) {
 
   const addItem = (item) => {
     dispatchCartAction({ type: "ADD_ITEM", item });
-    console.log(cart)
+    console.log(cart);
   };
 
   const removeItem = (id) => {

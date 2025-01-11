@@ -42,6 +42,7 @@ const Cart = () => {
         ))}
       </ul>
       <h3>Total: {currencyFormatter.format(cartTotal)}</h3>
+      <button className="checkout-btn">Check Out</button>
     </Modal>
   );
 };

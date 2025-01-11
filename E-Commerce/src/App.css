@@ -438,3 +438,22 @@
 .subselect p {
   font-weight: bold;
 }
+
+.checkout-btn {
+  width: 4rem;
+  margin-left: auto;
+  margin-right: 2.2rem;
+  height: 2rem;
+  background-color: orange;
+  color: white;
+  border: none;
+  width: 5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all linear 0.2s;
+}
+
+.checkout-btn:hover {
+  background-color: rgb(238, 155, 1);
+  transition: all linear 0.2s;
+}
