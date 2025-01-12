@@ -4,6 +4,8 @@ const OpenCloseContext = createContext({
   progress: "",
   showCart: () => {},
   hideCart: () => {},
+  showCheckout: () => {},
+  hideCheckout: () => {},
 });
 
 export function OpenCloseContextProvider({ children }) {
@@ -11,10 +13,18 @@ export function OpenCloseContextProvider({ children }) {
 
   const showCart = () => {
     setUserPorgress("open");
-    console.log("ctxprop:", userProgress)
   };
 
   const hideCart = () => {
+    setUserPorgress("");
+  };
+
+  const showCheckout = () => {
+    setUserPorgress("checkout");
+    console.log("hehe")
+  };
+
+  const hideCheckout = () => {
     setUserPorgress("");
   };
 
@@ -22,6 +32,8 @@ export function OpenCloseContextProvider({ children }) {
     progress: userProgress,
     showCart: showCart,
     hideCart: hideCart,
+    showCheckout: showCheckout,
+    hideCheckout: hideCheckout,
   };
 
   return (

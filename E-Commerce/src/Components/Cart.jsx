@@ -42,7 +42,7 @@ const Cart = () => {
         ))}
       </ul>
       <h3>Total: {currencyFormatter.format(cartTotal)}</h3>
-      <button className="checkout-btn">Check Out</button>
+      <button className="checkout-btn" onClick={progCtx.showCheckout}>Check Out</button>
     </Modal>
   );
 };

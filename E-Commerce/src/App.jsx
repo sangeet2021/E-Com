@@ -7,6 +7,7 @@ import { CartContextProovider } from "./Context/CartContext";
 import { useRef } from "react";
 import About from "./Components/About";
 import { OpenCloseContextProvider } from "./Context/OpenCloseContext";
+import Checkout from "./Components/Checkout";
 
 function App() {
   const shopRef = useRef(null);
@@ -36,6 +37,7 @@ function App() {
         <Shop ref={shopRef} />
         <About ref={aboutRef} />
         <Cart />
+        <Checkout />
       </CartContextProovider>
     </OpenCloseContextProvider>
   );

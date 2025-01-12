@@ -319,6 +319,7 @@
   max-width: 45rem;
   text-align: center;
   animation: fade-slide-up 0.3s ease-out forwards;
+  overflow: hidden;
 }
 
 .modal-content {
@@ -454,6 +455,62 @@
 }
 
 .checkout-btn:hover {
+  background-color: rgb(238, 155, 1);
+  transition: all linear 0.2s;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: beige;
+  margin: auto;
+  width: 80%;
+  border-radius: 5px;
+}
+
+.modal form input,
+textarea {
+  width: 12rem;
+  height: 2rem;
+  outline: none;
+  display: flex;
+  align-items: center;
+  padding: 0.2rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.modal form label {
+  width: 6rem;
+}
+
+.sub-form {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  margin-top: 2rem;
+}
+
+.checkout-btn2 {
+  width: 4rem;
+  margin-top: 1rem;
+  height: 2rem;
+  background-color: orange;
+  color: white;
+  border: none;
+  width: 10rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all linear 0.2s;
+  margin-bottom: 1rem;
+}
+
+.checkout-btn2:hover {
   background-color: rgb(238, 155, 1);
   transition: all linear 0.2s;
 }
